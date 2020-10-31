@@ -1,0 +1,222 @@
+.header {
+  width: 100%;
+  height: 17vh;
+  z-index: 1;
+  background-color: #232323;
+  text-align: center;
+}
+body {
+  background-color: yellow;
+  overflow-x: hidden;
+}
+.header-fixed {
+  /*position: fixed;*/
+  top: 0px;
+  width: 100%;
+}
+#logo-head {
+  width: 12vw;
+  height: 8vw;
+}
+h1 {
+  font-size: 6vw;
+  line-height: 1.2;
+  font-weight: inherit;
+  font-family: "Raleway";
+  color: white;
+}
+h2 {
+  font-family: "Snell Roundhand", cursive;
+  color: rgba(255, 255, 255, 0.4);
+}
+.content {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.container-log {
+  margin-left: 0;
+  margin-right: 0;
+  overflow-y: auto;
+  width: 100vw;
+  justify-content: center;
+}
+
+.dropdown {
+  float: left;
+  margin: 0.5vw auto;
+}
+#dropbtn1 {
+  background-color: #2577f8;
+  color: white;
+  font-size: 1vw;
+  border: none;
+  width: 15vw;
+  height: 5vw;
+  font-family: verdana;
+  text-transform: uppercase;
+  margin-left: 35vw;
+}
+#dropbtn2 {
+  background-color: #2577f8;
+  color: white;
+  font-size: 1vw;
+  border: none;
+  width: 15vw;
+  height: 5vw;
+  font-family: verdana;
+  text-transform: uppercase;
+  margin-right: 35vw;
+}
+#dropbtn1:hover,
+#dropbtn2:hover {
+  font-style: italic;
+  background-color: #2f9ff3;
+}
+#user-name-form {
+  height: 10%;
+  width: 10%;
+  color: rgba(23, 23, 23, 0.6);
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+#fullScreenDiv {
+  width: 100%;
+  height: 85vh;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  background-color: gray;
+  position: relative;
+}
+#video {
+  width: 100vw;
+  object-fit: cover;
+  left: 0px;
+  z-index: 1;
+}
+#footer {
+  top: 85vh;
+  width: 100vw;
+  height: 35vh;
+  background-color: #232323;
+  z-index: 1;
+  position: absolute;
+}
+
+/*@media (min-aspect-ratio: 16/9) {
+  #video{
+    height: 150%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #video {
+    width: 150%;
+    left: -100%;
+  }
+}*/
+@media only screen and (min-width: 100px) {
+  #video {
+    display: block;
+  }
+}
+#messageBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  background-image: linear-gradient(
+    -60deg,
+    rgba(220, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.4)
+  );
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+#formlogin {
+  display: none;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 15vh auto;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  top: 20vh;
+}
+#formsignup {
+  display: none;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 15vh auto;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  top: 20vh;
+}
+#formlogin input,
+#formsignup input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+#formlogin button,
+#formsignup button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4caf50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+#formlogin button:hover,
+#formlogin button:active,
+#formlogin button:focus,
+#formsignup button:hover,
+#formsignup button:active,
+#formsignup button:focus {
+  background: #43a047;
+}
+#formlogin .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 20px;
+}
+#formlogin .message a {
+  color: #4caf50;
+  text-decoration: none;
+}
+.social {
+  margin-left: 25vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 2vw;
+
+  text-align: center;
+  display: inline-block;
+  width: 50vw;
+  height: 10vh;
+  position: absolute;
+}
+i {
+  padding: 2vw;
+  color: white;
+}

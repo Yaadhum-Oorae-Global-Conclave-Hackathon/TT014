@@ -1,0 +1,450 @@
+body {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/background.png");
+  background-size: cover;
+  background-color: yellow;
+}
+#wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+#header {
+  width: 100vw;
+  background-color: #000;
+  height: 15vh;
+}
+#sitename {
+  width: 60%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 2;
+}
+#userpanel {
+  width: 30%;
+  height: 100%;
+  float: left;
+  line-height: 2.5;
+}
+#namesite a {
+  font-family: "Indigo", sans-serif;
+  color: #66fcf1;
+  font-weight: 800;
+  font-size: 4vw;
+  text-align: center;
+  margin: auto auto;
+  text-decoration: none;
+}
+#namesite a:hover {
+  font-family: "Indigo", sans-serif;
+  color: #fff;
+  font-weight: 800;
+  font-size: 4vw;
+  text-align: center;
+  margin: auto auto;
+  text-decoration: none;
+}
+#uname {
+  padding: 4px;
+  color: #66fcf1;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: 2vw;
+  font-family: "Verdana";
+  border-radius: 15px;
+  background-color: rgba(240, 255, 255, 0.18);
+}
+.dropbtn {
+  background-color: #000;
+  color: white;
+  font-size: 2vw;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.dropdown-content {
+  width: 10vw;
+  display: none;
+  position: absolute;
+  background-color: rgba(120, 120, 129, 0.5);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Verdana";
+  font-size: 1vw;
+  text-transform: uppercase;
+  transition: 800ms;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #000;
+  border-radius: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: #000;
+}
+
+.dropdown:hover .dropbtn {
+  transition: 500ms;
+  background-color: rgba(255, 255, 0, 0.9);
+  border-radius: 30px;
+  color: #000;
+}
+#content {
+  width: 100vw;
+  height: auto;
+}
+#questions::-webkit-scrollbar,
+#myprofile::-webkit-scrollbar,
+#question-disp::-webkit-scrollbar,
+#topvotes::-webkit-scrollbar {
+  display: none;
+}
+
+#questions {
+  width: 35vw;
+  border: 2px solid black;
+  float: left;
+  max-height: 70vh;
+  margin: 2.5vw;
+  background-color: #000;
+  border-radius: 20px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.3vw;
+  font-family: "Krona One", sans-serif;
+  overflow-y: scroll;
+}
+#question-disp {
+  width: 35vw;
+  border: 2px solid black;
+  float: left;
+  max-height: 70vh;
+  margin: 2.5vw;
+  background-color: #000;
+  border-radius: 20px;
+  color: #ff0000;
+  text-align: center;
+  font-size: 2.3vw;
+  font-family: "Krona One", sans-serif;
+  overflow-y: scroll;
+}
+#quesdisp,
+#quesdisplay,
+#quesdispnone {
+  color: black;
+  font-family: "Verdana";
+  width: 80%;
+  height: auto;
+  font-size: 1.3vw;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/background.png");
+  background-size: cover;
+  margin: 2vh auto;
+  padding: 2px;
+  position: relative;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+#ansdispnone,
+#ansdisp {
+  border: 1.6px solid black;
+  border-radius: 10px;
+  color: black;
+  font-family: "Verdana";
+  width: 80%;
+  height: auto;
+  font-size: 1.3vw;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-size: cover;
+  margin: 2vh auto;
+  padding: 2px;
+  position: relative;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+#askquestions {
+  width: 30vw;
+  float: left;
+  margin-left: 10vw;
+  margin-top: 2.5vw;
+}
+#askquestion-form {
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  border-radius: 20px;
+}
+#askques-text {
+  font-size: 1.3vw;
+  width: 80%;
+  height: 20vh;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  border-radius: 20px;
+  background-color: rgb(205, 225, 225);
+}
+#askques-text:focus {
+  background-color: lightblue;
+}
+#askques-subm {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 1vw;
+  margin-bottom: 8px;
+  border-radius: 10px;
+}
+#msgdisp {
+  font-family: "Verdana";
+  width: auto;
+  height: auto;
+  font-size: 1.1vw;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 2px auto;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+#messages-his {
+  border: 2px solid rgba(0, 87, 255, 0.8);
+}
+#chatroom {
+  width: 25%;
+  position: absolute;
+  height: 6vh;
+  margin-top: 76vh;
+  margin-left: 74vw;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  border: 2px solid rgba(0, 87, 255, 0.8);
+  cursor: pointer;
+  text-align: center;
+  font-family: "Arial";
+  line-height: 5vh;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+}
+#chatmessage {
+  width: 25%;
+  position: absolute;
+  height: 47vh;
+  margin-top: 35vh;
+  margin-left: 74vw;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  border: 2px solid rgba(0, 87, 255, 0.8);
+  cursor: pointer;
+}
+#chatmsgclose {
+  font-family: "Arial";
+  text-transform: uppercase;
+  font-size: 1.3vw;
+  margin-left: 94%;
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+#messagetext {
+  height: 10%;
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 72%;
+  margin-left: 3%;
+  font-size: 1vw;
+}
+#chatmessage i {
+  font-size: 1.5vw;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 3px;
+}
+#answers::-webkit-scrollbar {
+  display: none;
+}
+#answers {
+  margin-top: 5vh;
+  position: relative;
+  width: 50vw;
+  float: left;
+  max-height: 55vh;
+  overflow-y: scroll;
+}
+.menu-hamb {
+  width: 10%;
+  display: inline-block;
+  cursor: pointer;
+  float: left;
+  margin-top: 3vh;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 38px;
+  height: 0.7vh;
+  background-color: #f4f4f4;
+  margin: 0.7vh 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.overlay {
+  width: 100vw;
+  height: 85vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: absolute;
+  display: none;
+}
+.overlay-menu {
+  width: 20vw;
+  height: 60vh;
+  background: #ff00ff;
+  margin-left: 80%;
+  display: none;
+  text-align: center;
+}
+.show {
+  display: block;
+}
+hr {
+  color: rgb(0, 0, 0);
+}
+.overlay-menu ul {
+  margin-left: 0;
+}
+.overlay-menu li {
+  margin-right: 1vw;
+  font-size: 1.6vw;
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 8vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+}
+.overlay-menu li:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+#messages-his::-webkit-scrollbar {
+  width: 1em;
+  display: none;
+}
+#messages-his {
+  width: 90%;
+  height: 85%;
+  max-height: 85%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 1%;
+  margin-top: 1%;
+  border-radius: 20px;
+  overflow-y: scroll;
+}
+#ansques {
+  position: absolute;
+  margin-top: 40vh;
+  width: 35vw;
+  float: none;
+  margin-left: 2.5vw;
+}
+.liked {
+  margin-top: 1vw;
+  font-size: 2vw;
+  color: green;
+  display: inline-block;
+}
+.disliked {
+  margin-top: 1vw;
+  font-size: 2vw;
+  margin-left: 1vw;
+  color: green;
+  display: inline-block;
+}
+.highlight {
+  color: blue;
+}
+#topvotes {
+  width: 35vw;
+  border: 2px solid black;
+  float: left;
+  max-height: 70vh;
+  margin: 2.5vw;
+  margin-left: 32.5vw;
+  background-color: #000;
+  border-radius: 20px;
+  color: #ff0000;
+  text-align: center;
+  font-size: 2.3vw;
+  font-family: "Krona One", sans-serif;
+  overflow-y: scroll;
+  display: none;
+}
+#myprofile {
+  width: 35vw;
+  height: 50vh;
+  border: 2px solid black;
+  float: left;
+  max-height: 70vh;
+  margin: 2.5vw;
+  margin-left: 32.5vw;
+  background-color: #000;
+  border-radius: 20px;
+  color: #ff0000;
+  text-align: center;
+  font-size: 2.3vw;
+  font-family: "Krona One", sans-serif;
+  overflow-y: scroll;
+  display: none;
+}

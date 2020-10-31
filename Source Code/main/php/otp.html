@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		NAMMA AREA
+	</title>
+	<style type="text/css">
+		body{
+			background-color: yellow;
+		}
+		.header{
+		width: 100%;
+		height: 17vh;
+		z-index: 1;
+		background-color: #232323;
+		text-align: center;
+		}
+		.header-fixed{
+			/*position: fixed;*/
+			top: 0px;
+			width: 100%;
+		}
+		#logo-head{
+			width: 12vw;
+			height: 8vw;
+		}
+		#formlogin {
+		  background: #FFFFFF;
+		  max-width: 360px;
+		  margin: 15vh auto;
+		  padding: 45px;
+		  text-align: center;
+		  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+		  top: 20vh;
+		}
+		#formlogin input, #formsignup input {
+		  font-family: "Roboto", sans-serif;
+		  outline: 0;
+		  background: #f2f2f2;
+		  width: 100%;
+		  border: 0;
+		  margin: 0 0 15px;
+		  padding: 15px;
+		  box-sizing: border-box;
+		  font-size: 14px;
+		}
+		#formlogin button, #formsignup button {
+		  font-family: "Roboto", sans-serif;
+		  text-transform: uppercase;
+		  outline: 0;
+		  background: #4CAF50;
+		  width: 100%;
+		  border: 0;
+		  padding: 15px;
+		  color: #FFFFFF;
+		  font-size: 14px;
+		  -webkit-transition: all 0.3 ease;
+		  transition: all 0.3 ease;
+		  cursor: pointer;
+		}
+		#formlogin button:hover,#formlogin button:active,#formlogin button:focus, #formsignup button:hover, #formsignup button:active, #formsignup button:focus {
+		  background: #43A047;
+		}
+		#formlogin .message {
+		  margin: 15px 0 0;
+		  color: #b3b3b3;
+		  font-size: 20px;
+		}
+		#formlogin .message a {
+		  color: #4CAF50;
+		  text-decoration: none;
+		}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+</head>
+<body>
+	<div class="header-fixed">
+		<div class="header">
+			<span><a href="../index.html"><img id="logo-head" src="../images/logo1.png"></a></span>
+		</div>
+	</div>
+	<div id="formlogin" >
+	    <form class="loginform" action="otp.php" method="post">
+	    	<input type="text" placeholder="OTP" name="logotp"/>
+	    	<button>SUBMIT</button>
+	    </form>
+	</div>
+</body>
+</html>

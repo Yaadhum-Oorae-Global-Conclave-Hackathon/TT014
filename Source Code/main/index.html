@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		tamil PEDIA
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="css/stylemain.css">
+</head>
+<body>
+	<div class="header-fixed">
+		<div class="header">
+			<span><a href="index.html"><img id="logo-head" src="images/logo1.jpeg"></a></span>
+		</div>
+	</div>
+	<div id="fullScreenDiv">
+        <div id="videoDiv">           
+            <video preload="preload" id="video" autoplay="autoplay" loop="loop">
+            	<source src="images/banner.mp4" type="video/mp4"></source>
+            </video> 
+        </div>
+        <div id="messageBox">
+        	<div class="container-log">
+        		<div>
+        			<div class="dropdown">
+	  					<button id="dropbtn1">LOGIN</button>
+					</div>
+					<div class="dropdown">
+	  					<button id="dropbtn2">SIGNUP</button>
+					</div>
+				</div>
+			</div>
+            <h1>tamil PEDIA</h1>
+        </div>  
+        <footer id="footer">
+			<center>
+				<h2>Made with Love, from tamil PEDIA Team</h2> 
+			</center>
+			<div class="social">
+			  <a target="_blank" data-tooltip="ckmganesh2000@gmail.com" href="mailto:ckmganesh2000@gmail.com">
+			    <i class="fa fa-envelope"></i>
+			  </a>
+			  <a target="_blank" data-tooltip="GitHub" href="https://github.com/venkatr21">
+			    <i class="fa fa-github"></i>
+			  </a>
+			  <a target="_blank" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/venkat-ragavan-29952118b/">
+			    <i class="fa fa-linkedin"></i>
+			  </a>
+			  <a target="_blank" data-tooltip="Twitter" href="https://twitter.com/colorlib">
+			    <i class="fa fa-twitter"></i>
+			  </a>
+			  <a target="_blank" data-tooltip="Facebook" href="https://www.facebook.com/profile.php?id=100002046976397">
+			    <i class="fa fa-facebook"></i>
+			  </a>
+			  <a target="_blank" href="https://instagram.com/venkatr21">
+			    <i class="fa fa-instagram"></i>
+			  </a>
+
+			</div>
+        </footer> 
+    </div>
+		<div id="formlogin">
+		    <form class="loginform" action="php/loginvalidate.php" method="post">
+		    	<input type="text" placeholder="Username" name="loguname" />
+		    	<input type="password" placeholder="Password" name="logpass" />
+		     	<button>login</button>
+		     	<p class="message">Not registered? <a id="logredirectsign" href="#">Create an account</a></p>
+		    </form>
+		</div>
+		<div id="formsignup">
+		    <form class="signupform" action="php/signupvalidate.php" method="post">
+		    	<input type="text" placeholder="Name" name="logname" />
+		    	<input type="text" placeholder="Email" name="logemail" />
+		    	<input type="text" placeholder="Username" name="loguname" />
+		    	<input type="password" placeholder="Password" name="logpass" />
+		    	<input type="text" placeholder="Mobile" name="logmobile" />
+		    	<input type="text" placeholder="Location" name="loglocation" />
+		     	<button>SIGNUP</button>
+		    </form>
+		</div>
+	<script type="text/javascript" src="java/scriptmain.js"></script>
+</body>
+</html>
